@@ -52,11 +52,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,13 +100,51 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\1.png" />
-    <Content Include="Resources\2.png" />
-    <Content Include="Resources\3.png" />
-    <Content Include="Resources\4.png" />
-    <Content Include="Resources\5.png" />
-    <Content Include="Resources\6.png" />
-    <Content Include="Resources\rollthediceF.png" />
+    <Content Include="Resources\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\application.png" />
+    <None Include="Resources\application1.png" />
+    <Content Include="Resources\background.jpg" />
+    <None Include="Resources\background1.jpg" />
+    <Content Include="Resources\d.png" />
+    <None Include="Resources\d1.png" />
+    <Content Include="Resources\l.png" />
+    <None Include="Resources\l1.png" />
+    <Content Include="Resources\l2.png" />
+    <None Include="Resources\l21.png" />
+    <Content Include="Resources\ladderr.jpg" />
+    <None Include="Resources\ladderr1.jpg" />
+    <Content Include="Resources\logo.png" />
+    <None Include="Resources\logo1.png" />
+    <Content Include="Resources\ls.png" />
+    <None Include="Resources\ls1.png" />
+    <Content Include="Resources\rollthediceF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\s1.png" />
+    <None Include="Resources\s11.png" />
+    <Content Include="Resources\s2.png" />
+    <None Include="Resources\s21.png" />
+    <Content Include="Resources\snake.jpg" />
+    <Content Include="Resources\snake.png" />
+    <None Include="Resources\snake1.png" />
+    <None Include="Resources\snake1.jpg" />
     <Content Include="Resources\snakesAndLadders.jpg" />
     <None Include="Resources\stage11.png" />
     <None Include="Resources\token21.png" />

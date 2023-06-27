@@ -13,13 +13,17 @@ namespace Snakes_Ladders
         // rolling the dice method
         public static int RollDice(PictureBox pb)
         {
+            
             int dice = 0;
             Random random = new Random();
             dice = random.Next(1, 7);
 
             // changing the dice image
-            pb.Image = Image.FromFile(@"C:\Users\Administrator\source\repos\Snakes&Ladders\Snakes&Ladders\Resources\" + dice + ".png");
+            
+            string picturePath2 = "./Resources/" + dice + ".png";
+            pb.ImageLocation = picturePath2;
             pb.SizeMode = PictureBoxSizeMode.Zoom;
+            
 
             return dice;
         }
