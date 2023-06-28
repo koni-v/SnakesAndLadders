@@ -124,6 +124,8 @@
     <None Include="Resources\background1.jpg" />
     <None Include="Resources\blue background.jpg" />
     <None Include="Resources\blue background1.jpg" />
+    <Content Include="Resources\blueGradientBackground.jpg" />
+    <None Include="Resources\blueGradientBackground1.jpg" />
     <Content Include="Resources\d.png" />
     <None Include="Resources\d1.png" />
     <Content Include="Resources\l.png" />
