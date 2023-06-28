@@ -83,6 +83,16 @@ namespace Snakes_Ladders.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_background {
+            get {
+                object obj = ResourceManager.GetObject("blue background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap d {
             get {
                 object obj = ResourceManager.GetObject("d", resourceCulture);

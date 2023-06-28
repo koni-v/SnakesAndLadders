@@ -27,7 +27,8 @@ namespace Snakes_Ladders
         public int p2 = 0;
 
         public int DiceValue { get; set; }
-        int second = 0;
+        int seconds;
+
         public Form1()
         {
             InitializeComponent();
@@ -39,11 +40,10 @@ namespace Snakes_Ladders
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            // the timer for the dices is stopped
-            
+        {            
             // hide all the controling labels
             labelsHide();
+
             // first turn - player1
             if (flag == 0)
             {
@@ -57,10 +57,8 @@ namespace Snakes_Ladders
             pbPurpleToken.Visible = false;
 
             // setting up "roll the dice" image
-            // setting it with ImageLocation property so it can be open from different computer
             string picturePath = "./Resources/rollthediceF.png";
             pbdice.ImageLocation = picturePath;
-            //pbdice.Image = Image.FromFile(@"C:\Users\Administrator\source\repos\Snakes&Ladders\Snakes&Ladders\Resources\rollthediceF.png");
             pbdice.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
@@ -69,11 +67,9 @@ namespace Snakes_Ladders
         private void btnRoll_Click(object sender, EventArgs e)
         {
             
-
             DiceValue = Functions.RollDice(pbdice);
             lbdice.Text = DiceValue.ToString();
            
-
             // moving the yellow pion
             if (YellowToken)
             {
@@ -99,17 +95,18 @@ namespace Snakes_Ladders
             // pop up message if the winner is player1 (100th position)
             if (p == 100)
             {
-                DialogResult dg = MessageBox.Show("CONGRATULATIONS PLAYER1 - YOU WON!  \n PLAY AGAIN?", "WINNER", MessageBoxButtons.OKCancel);
+                DialogResult dg = MessageBox.Show("CONGRATULATIONS PLAYER1 - YOU WON!  \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
                 btnRoll.Enabled = false;
-                if (dg == DialogResult.OK)
+                if (dg == DialogResult.Yes)
                 {
                     this.Close();
                     Form1 fm1 = new Form1();
-                    fm1.ShowDialog();
+                    fm1.Show();
                 }
-
-                // closing the form
-                this.Close();
+                else 
+                {
+                    this.Close();
+                }
             }
 
             // calling the functions for the snakes and ladders implementation
@@ -135,9 +132,7 @@ namespace Snakes_Ladders
 
         // rolling the dice - player2
         private void btnRoll2_Click(object sender, EventArgs e)
-        {
-            
-
+        {  
             DiceValue = Functions.RollDice(pbdice);
             lbdice.Text = DiceValue.ToString();
            
@@ -167,19 +162,19 @@ namespace Snakes_Ladders
             // pop up message if the winner is player2 (100th position)
             if (p2 == 100)
             {
-                DialogResult dg =MessageBox.Show("CONGRATULATIONS PLAYER2 - YOU WON! \n PLAY AGAIN?", "WINNER", MessageBoxButtons.OKCancel);
-                if (dg == DialogResult.OK)
-                {
-                    
+                DialogResult dg =MessageBox.Show("CONGRATULATIONS PLAYER2 - YOU WON! \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
+                
+                if (dg == DialogResult.Yes)
+                { 
                     Form1 fm1 = new Form1();
                     this.Close();
-                    fm1.ShowDialog();
+                    fm1.Show();
                 }
-                btnRoll2.Enabled = false;
-
-                // closing the form
-                this.Close();
-            }
+                else
+                {
+                    this.Close();
+                }
+             }
 
             // calling the functions for the snakes and ladders implementation
             p2 = Functions.Snake(ref x2, ref y2, p2, pbPurpleToken);
@@ -202,6 +197,7 @@ namespace Snakes_Ladders
             }
         }
 
+        // hidding the labels method
         public void labelsHide()
         {
             label5.Visible = false;
@@ -219,19 +215,21 @@ namespace Snakes_Ladders
 
         }
 
+        // button exit
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
+
         // timer event for rolling dice
         //private void timer1_Tick(object sender, EventArgs e)
         //{
         //    int pic;
-        //    second++;
+        //    seconds++;
         //    Random r = new Random();
-        //    if (second <= 10)
+        //    if (seconds <= 10)
         //    {
-        //        pic = r.Next(1,7);
+        //        pic = r.Next(1, 7);
         //        string picturePath2 = "./Resources/" + pic + ".png";
         //        pbdice.ImageLocation = picturePath2;
         //        pbdice.SizeMode = PictureBoxSizeMode.Zoom;
@@ -241,11 +239,9 @@ namespace Snakes_Ladders
         //    {
         //        timer1.Stop();
         //        Functions.RollDice(pbdice);
-
         //    }
-
-
         //}
+
         //// timer function
         //private void timergame(object sender, EventArgs e)
         //{

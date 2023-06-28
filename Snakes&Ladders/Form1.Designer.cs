@@ -72,11 +72,10 @@ namespace Snakes_Ladders
             this.btnRoll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRoll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRoll.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRoll.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnRoll.Location = new System.Drawing.Point(733, 382);
-            this.btnRoll.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRoll.ForeColor = System.Drawing.Color.Black;
+            this.btnRoll.Location = new System.Drawing.Point(548, 294);
             this.btnRoll.Name = "btnRoll";
-            this.btnRoll.Size = new System.Drawing.Size(111, 43);
+            this.btnRoll.Size = new System.Drawing.Size(83, 35);
             this.btnRoll.TabIndex = 3;
             this.btnRoll.Text = "ROLL";
             this.btnRoll.UseVisualStyleBackColor = false;
@@ -88,11 +87,10 @@ namespace Snakes_Ladders
             this.btnRoll2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRoll2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRoll2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRoll2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnRoll2.Location = new System.Drawing.Point(889, 382);
-            this.btnRoll2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRoll2.ForeColor = System.Drawing.Color.Black;
+            this.btnRoll2.Location = new System.Drawing.Point(669, 294);
             this.btnRoll2.Name = "btnRoll2";
-            this.btnRoll2.Size = new System.Drawing.Size(111, 43);
+            this.btnRoll2.Size = new System.Drawing.Size(83, 35);
             this.btnRoll2.TabIndex = 4;
             this.btnRoll2.Text = "ROLL";
             this.btnRoll2.UseVisualStyleBackColor = false;
@@ -101,40 +99,36 @@ namespace Snakes_Ladders
             // lbxText
             // 
             this.lbxText.AutoSize = true;
-            this.lbxText.Location = new System.Drawing.Point(729, 148);
-            this.lbxText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbxText.Location = new System.Drawing.Point(547, 120);
             this.lbxText.Name = "lbxText";
-            this.lbxText.Size = new System.Drawing.Size(18, 16);
+            this.lbxText.Size = new System.Drawing.Size(17, 13);
             this.lbxText.TabIndex = 5;
             this.lbxText.Text = "X:";
             // 
             // lbyText
             // 
             this.lbyText.AutoSize = true;
-            this.lbyText.Location = new System.Drawing.Point(729, 183);
-            this.lbyText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbyText.Location = new System.Drawing.Point(547, 133);
             this.lbyText.Name = "lbyText";
-            this.lbyText.Size = new System.Drawing.Size(19, 16);
+            this.lbyText.Size = new System.Drawing.Size(17, 13);
             this.lbyText.TabIndex = 6;
             this.lbyText.Text = "Y:";
             // 
             // lbx
             // 
             this.lbx.AutoSize = true;
-            this.lbx.Location = new System.Drawing.Point(769, 148);
-            this.lbx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbx.Location = new System.Drawing.Point(577, 120);
             this.lbx.Name = "lbx";
-            this.lbx.Size = new System.Drawing.Size(24, 16);
+            this.lbx.Size = new System.Drawing.Size(20, 13);
             this.lbx.TabIndex = 7;
             this.lbx.Text = "lbx";
             // 
             // lby
             // 
             this.lby.AutoSize = true;
-            this.lby.Location = new System.Drawing.Point(769, 183);
-            this.lby.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lby.Location = new System.Drawing.Point(577, 133);
             this.lby.Name = "lby";
-            this.lby.Size = new System.Drawing.Size(25, 16);
+            this.lby.Size = new System.Drawing.Size(20, 13);
             this.lby.TabIndex = 8;
             this.lby.Text = "lby";
             // 
@@ -142,10 +136,9 @@ namespace Snakes_Ladders
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(717, 509);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(551, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 18);
+            this.label5.Size = new System.Drawing.Size(112, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Position - player1:";
             // 
@@ -154,10 +147,9 @@ namespace Snakes_Ladders
             this.lbMessage.AutoSize = true;
             this.lbMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbMessage.ForeColor = System.Drawing.Color.Red;
-            this.lbMessage.Location = new System.Drawing.Point(717, 610);
-            this.lbMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMessage.Location = new System.Drawing.Point(551, 430);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(75, 18);
+            this.lbMessage.Size = new System.Drawing.Size(63, 15);
             this.lbMessage.TabIndex = 10;
             this.lbMessage.Text = "Message";
             // 
@@ -165,10 +157,9 @@ namespace Snakes_Ladders
             // 
             this.lbp.AutoSize = true;
             this.lbp.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.lbp.Location = new System.Drawing.Point(875, 509);
-            this.lbp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbp.Location = new System.Drawing.Point(669, 378);
             this.lbp.Name = "lbp";
-            this.lbp.Size = new System.Drawing.Size(29, 18);
+            this.lbp.Size = new System.Drawing.Size(24, 15);
             this.lbp.TabIndex = 11;
             this.lbp.Text = "lbp";
             // 
@@ -176,10 +167,9 @@ namespace Snakes_Ladders
             // 
             this.lbp2.AutoSize = true;
             this.lbp2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.lbp2.Location = new System.Drawing.Point(875, 580);
-            this.lbp2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbp2.Location = new System.Drawing.Point(669, 393);
             this.lbp2.Name = "lbp2";
-            this.lbp2.Size = new System.Drawing.Size(38, 18);
+            this.lbp2.Size = new System.Drawing.Size(31, 15);
             this.lbp2.TabIndex = 14;
             this.lbp2.Text = "lbp2";
             // 
@@ -188,10 +178,9 @@ namespace Snakes_Ladders
             this.lbMessage2.AutoSize = true;
             this.lbMessage2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbMessage2.ForeColor = System.Drawing.Color.Red;
-            this.lbMessage2.Location = new System.Drawing.Point(717, 628);
-            this.lbMessage2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMessage2.Location = new System.Drawing.Point(551, 430);
             this.lbMessage2.Name = "lbMessage2";
-            this.lbMessage2.Size = new System.Drawing.Size(75, 18);
+            this.lbMessage2.Size = new System.Drawing.Size(63, 15);
             this.lbMessage2.TabIndex = 13;
             this.lbMessage2.Text = "Message";
             // 
@@ -199,10 +188,9 @@ namespace Snakes_Ladders
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label10.Location = new System.Drawing.Point(717, 580);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(551, 393);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 18);
+            this.label10.Size = new System.Drawing.Size(112, 15);
             this.label10.TabIndex = 12;
             this.label10.Text = "Position - player2:";
             // 
@@ -210,10 +198,9 @@ namespace Snakes_Ladders
             // 
             this.lbdice.AutoSize = true;
             this.lbdice.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
-            this.lbdice.Location = new System.Drawing.Point(872, 206);
-            this.lbdice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbdice.Location = new System.Drawing.Point(661, 153);
             this.lbdice.Name = "lbdice";
-            this.lbdice.Size = new System.Drawing.Size(31, 35);
+            this.lbdice.Size = new System.Drawing.Size(25, 28);
             this.lbdice.TabIndex = 16;
             this.lbdice.Text = "N";
             // 
@@ -221,39 +208,38 @@ namespace Snakes_Ladders
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(811, 206);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(617, 153);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 35);
+            this.label12.Size = new System.Drawing.Size(51, 28);
             this.label12.TabIndex = 15;
             this.label12.Text = "Dice:";
             // 
             // lby2
             // 
             this.lby2.AutoSize = true;
-            this.lby2.Location = new System.Drawing.Point(823, 183);
-            this.lby2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lby2.Location = new System.Drawing.Point(617, 133);
             this.lby2.Name = "lby2";
-            this.lby2.Size = new System.Drawing.Size(32, 16);
+            this.lby2.Size = new System.Drawing.Size(26, 13);
             this.lby2.TabIndex = 18;
             this.lby2.Text = "lby2";
             // 
             // lbx2
             // 
             this.lbx2.AutoSize = true;
-            this.lbx2.Location = new System.Drawing.Point(823, 148);
-            this.lbx2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbx2.Location = new System.Drawing.Point(617, 120);
             this.lbx2.Name = "lbx2";
-            this.lbx2.Size = new System.Drawing.Size(31, 16);
+            this.lbx2.Size = new System.Drawing.Size(26, 13);
             this.lbx2.TabIndex = 17;
             this.lbx2.Text = "lbx2";
             // 
             // lblTurn
             // 
-            this.lblTurn.Font = new System.Drawing.Font("Mistral", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurn.Location = new System.Drawing.Point(732, 455);
+            this.lblTurn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTurn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTurn.Location = new System.Drawing.Point(549, 339);
+            this.lblTurn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTurn.Name = "lblTurn";
-            this.lblTurn.Size = new System.Drawing.Size(268, 30);
+            this.lblTurn.Size = new System.Drawing.Size(203, 30);
             this.lblTurn.TabIndex = 19;
             this.lblTurn.Text = "lblTurn";
             this.lblTurn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,12 +250,16 @@ namespace Snakes_Ladders
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnExit.BackColor = System.Drawing.Color.LightSlateGray;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Font = new System.Drawing.Font("Mistral", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(807, 536);
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(548, 495);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(133, 44);
+            this.btnExit.Size = new System.Drawing.Size(204, 30);
             this.btnExit.TabIndex = 20;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -277,10 +267,9 @@ namespace Snakes_Ladders
             // 
             // pbdice
             // 
-            this.pbdice.Location = new System.Drawing.Point(807, 245);
-            this.pbdice.Margin = new System.Windows.Forms.Padding(4);
+            this.pbdice.Location = new System.Drawing.Point(603, 182);
             this.pbdice.Name = "pbdice";
-            this.pbdice.Size = new System.Drawing.Size(133, 119);
+            this.pbdice.Size = new System.Drawing.Size(100, 97);
             this.pbdice.TabIndex = 2;
             this.pbdice.TabStop = false;
             // 
@@ -290,10 +279,9 @@ namespace Snakes_Ladders
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.pbPurpleStart);
             this.panel1.Controls.Add(this.pbYellowStart);
-            this.panel1.Location = new System.Drawing.Point(733, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(550, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 123);
+            this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 1;
             // 
             // pbPurpleStart
@@ -301,10 +289,9 @@ namespace Snakes_Ladders
             this.pbPurpleStart.BackColor = System.Drawing.Color.Transparent;
             this.pbPurpleStart.BackgroundImage = global::Snakes_Ladders.Properties.Resources.token2;
             this.pbPurpleStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPurpleStart.Location = new System.Drawing.Point(163, 16);
-            this.pbPurpleStart.Margin = new System.Windows.Forms.Padding(4);
+            this.pbPurpleStart.Location = new System.Drawing.Point(122, 13);
             this.pbPurpleStart.Name = "pbPurpleStart";
-            this.pbPurpleStart.Size = new System.Drawing.Size(44, 73);
+            this.pbPurpleStart.Size = new System.Drawing.Size(33, 59);
             this.pbPurpleStart.TabIndex = 3;
             this.pbPurpleStart.TabStop = false;
             // 
@@ -313,10 +300,9 @@ namespace Snakes_Ladders
             this.pbYellowStart.BackColor = System.Drawing.Color.Transparent;
             this.pbYellowStart.BackgroundImage = global::Snakes_Ladders.Properties.Resources.token1;
             this.pbYellowStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbYellowStart.Location = new System.Drawing.Point(60, 15);
-            this.pbYellowStart.Margin = new System.Windows.Forms.Padding(4);
+            this.pbYellowStart.Location = new System.Drawing.Point(45, 12);
             this.pbYellowStart.Name = "pbYellowStart";
-            this.pbYellowStart.Size = new System.Drawing.Size(44, 73);
+            this.pbYellowStart.Size = new System.Drawing.Size(33, 59);
             this.pbYellowStart.TabIndex = 2;
             this.pbYellowStart.TabStop = false;
             // 
@@ -326,10 +312,9 @@ namespace Snakes_Ladders
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel.Controls.Add(this.pbPurpleToken);
             this.panel.Controls.Add(this.pbYellowToken);
-            this.panel.Location = new System.Drawing.Point(4, 0);
-            this.panel.Margin = new System.Windows.Forms.Padding(4);
+            this.panel.Location = new System.Drawing.Point(3, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(705, 646);
+            this.panel.Size = new System.Drawing.Size(529, 525);
             this.panel.TabIndex = 0;
             // 
             // pbPurpleToken
@@ -337,10 +322,9 @@ namespace Snakes_Ladders
             this.pbPurpleToken.BackColor = System.Drawing.Color.Transparent;
             this.pbPurpleToken.BackgroundImage = global::Snakes_Ladders.Properties.Resources.token2;
             this.pbPurpleToken.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPurpleToken.Location = new System.Drawing.Point(92, 585);
-            this.pbPurpleToken.Margin = new System.Windows.Forms.Padding(4);
+            this.pbPurpleToken.Location = new System.Drawing.Point(69, 475);
             this.pbPurpleToken.Name = "pbPurpleToken";
-            this.pbPurpleToken.Size = new System.Drawing.Size(31, 54);
+            this.pbPurpleToken.Size = new System.Drawing.Size(23, 44);
             this.pbPurpleToken.TabIndex = 5;
             this.pbPurpleToken.TabStop = false;
             // 
@@ -349,19 +333,18 @@ namespace Snakes_Ladders
             this.pbYellowToken.BackColor = System.Drawing.Color.Transparent;
             this.pbYellowToken.BackgroundImage = global::Snakes_Ladders.Properties.Resources.token1;
             this.pbYellowToken.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbYellowToken.Location = new System.Drawing.Point(32, 393);
-            this.pbYellowToken.Margin = new System.Windows.Forms.Padding(4);
+            this.pbYellowToken.Location = new System.Drawing.Point(24, 319);
             this.pbYellowToken.Name = "pbYellowToken";
-            this.pbYellowToken.Size = new System.Drawing.Size(33, 54);
+            this.pbYellowToken.Size = new System.Drawing.Size(25, 44);
             this.pbYellowToken.TabIndex = 4;
             this.pbYellowToken.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1049, 650);
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.ClientSize = new System.Drawing.Size(772, 528);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblTurn);
             this.Controls.Add(this.lby2);
@@ -383,7 +366,6 @@ namespace Snakes_Ladders
             this.Controls.Add(this.pbdice);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

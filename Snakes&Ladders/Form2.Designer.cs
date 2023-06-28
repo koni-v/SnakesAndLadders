@@ -50,13 +50,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LavenderBlush;
             this.button1.Location = new System.Drawing.Point(90, 170);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 117);
+            this.button1.Size = new System.Drawing.Size(238, 100);
             this.button1.TabIndex = 0;
             this.button1.Text = "New Game";
             this.button1.UseVisualStyleBackColor = false;
@@ -64,13 +65,14 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.BackColor = System.Drawing.Color.YellowGreen;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(90, 324);
+            this.button2.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(90, 297);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(238, 106);
+            this.button2.Size = new System.Drawing.Size(238, 100);
             this.button2.TabIndex = 1;
             this.button2.Text = "How to Play";
             this.button2.UseVisualStyleBackColor = false;
@@ -111,6 +113,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Snakes_Ladders.Properties.Resources.d;
             this.pictureBox5.Location = new System.Drawing.Point(356, 141);
             this.pictureBox5.Name = "pictureBox5";
@@ -165,10 +168,10 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.BackgroundImage = global::Snakes_Ladders.Properties.Resources.background;
+            this.BackgroundImage = global::Snakes_Ladders.Properties.Resources.blue_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1049, 650);
             this.Controls.Add(this.pictureBox8);
@@ -186,7 +189,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "Form2";
             this.Text = "Snakes and Ladders";
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

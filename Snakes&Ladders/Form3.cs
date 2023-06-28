@@ -17,11 +17,6 @@ namespace Snakes_Ladders
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();

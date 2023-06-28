@@ -122,6 +122,7 @@
     <None Include="Resources\application1.png" />
     <Content Include="Resources\background.jpg" />
     <None Include="Resources\background1.jpg" />
+    <None Include="Resources\blue background.jpg" />
     <Content Include="Resources\d.png" />
     <None Include="Resources\d1.png" />
     <Content Include="Resources\l.png" />
