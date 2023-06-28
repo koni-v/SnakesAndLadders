@@ -170,8 +170,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.BackgroundImage = global::Snakes_Ladders.Properties.Resources.blue_background;
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = global::Snakes_Ladders.Properties.Resources.blue_background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1049, 650);
             this.Controls.Add(this.pictureBox8);
