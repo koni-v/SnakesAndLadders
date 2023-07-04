@@ -7,7 +7,8 @@ Windows Forms Project by: Koni Vidovic and Bojana Bojchovska
 ### 2. Упатство за користење
 На почетниот прозорец (слика 1) при стартување на апликацијата имаме можност да започнеме нова игра (New Game) или пак да погледнеме упатство за правилата на играта (How to Play).
 
-![slika1](https://github.com/koni-v/SnakesAndLadders/assets/125313042/bbf310a9-da18-4afd-a3b1-b8fc6af27f34)
+![slika1](https://github.com/koni-v/SnakesAndLadders/assets/125313042/0beb2376-e27c-4c77-b211-33fc3ca9a036)
+
 
 (слика 1)
 
@@ -30,18 +31,20 @@ o	No – исклучување на играта
 
 •	Исклучување на играта – при клик на копчето “Exit” се затвара прозорецот на играта.
 
-![picture2](https://github.com/koni-v/SnakesAndLadders/assets/125313042/edd9880c-9a53-4782-943c-d273989e14c0)
+![picture2](https://github.com/koni-v/SnakesAndLadders/assets/125313042/de462124-6bb4-402e-ad78-262ce3969c44)
+
 
 (слика 2)
 
-![picture3](https://github.com/koni-v/SnakesAndLadders/assets/125313042/ec109640-e550-4a3d-9427-e915337cc019)
+![picture3](https://github.com/koni-v/SnakesAndLadders/assets/125313042/4095f375-63fc-45e2-adfc-113121164f2e)
+
 
 (слика 3)
 
 ### 2.2 How to Play
 Доколку го избереме копчето How to Play ни се отвара нов прозорец со кратко упатство за играта (слика 4). На прозорецот за инструкции има копче “Start” при чиј клик директно се отвара прозорецот на играта. 
 
-![picture4](https://github.com/koni-v/SnakesAndLadders/assets/125313042/95db168c-334f-42bf-8dca-35f59c769e53)
+![picture4](https://github.com/koni-v/SnakesAndLadders/assets/125313042/e328ec79-d6ee-46f5-87ca-e6640feb77d4)
 
 (слика 4)
 
@@ -65,17 +68,17 @@ o	Скали: Некои полиња се поврзани со скали ка
 ### 3. Претставување на проблемот
 Главните функционалности за играта се имплементирани во класа public class Functions.
 
-![picture a](https://github.com/koni-v/SnakesAndLadders/assets/125313042/fa6c2f9e-362a-40b6-97fb-a8c9c82e68a1)
-
+![picture a](https://github.com/koni-v/SnakesAndLadders/assets/125313042/b741e67d-dbc7-4b5a-ba6d-13c8e9282b1e)
 
 ### 3.1 Движење на пиончињата
 Движењето на пиончињата е имплементирано во функцијата public static int Move.
 
-![picture b](https://github.com/koni-v/SnakesAndLadders/assets/125313042/33c361b8-e4a2-4c7e-a70a-b547d466df34)
+![picture b](https://github.com/koni-v/SnakesAndLadders/assets/125313042/1e660a26-3ce8-4c19-a7cf-c220ccbd02c8)
+
 
 Обичното движење на пиочињата е имплементирано со користење на структурата “Switch Case” и координантни точки (слика 5).
 
-![picture5](https://github.com/koni-v/SnakesAndLadders/assets/125313042/444d0334-9ac0-4688-820c-6212ddf5b4fc)
+![picture5](https://github.com/koni-v/SnakesAndLadders/assets/125313042/26852bc7-8554-44e8-8c01-5369ed511388)
 
 (слика 5)
 
@@ -85,6 +88,6 @@ o	Скали: Некои полиња се поврзани со скали ка
 ### 3.3 Вртење на коцка
 Вртењето на коцка е имплементирано во функцијата public static int RollDice (слика 6) каде со секое генерирање на случаен број се менува сликата на добиената коцката.
 
-![picture6](https://github.com/koni-v/SnakesAndLadders/assets/125313042/a27fc24c-dce5-4e27-b0d1-a968ac11ed75)
+![picture6](https://github.com/koni-v/SnakesAndLadders/assets/125313042/97a28ec6-b99a-485c-8099-a64af8957ffe)
 
 (слика 6)
