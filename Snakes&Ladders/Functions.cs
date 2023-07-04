@@ -19,11 +19,9 @@ namespace Snakes_Ladders
             dice = random.Next(1, 7);
 
             // changing the dice image
-            
             string picturePath2 = "./Resources/" + dice + ".png";
             pb.ImageLocation = picturePath2;
             pb.SizeMode = PictureBoxSizeMode.Zoom;
-            
 
             return dice;
         }
@@ -52,6 +50,7 @@ namespace Snakes_Ladders
                 {
                     switch (p)
                     {
+                        // y axis
                         case 10:
                             x = 492;
                             y = 423;
@@ -88,6 +87,7 @@ namespace Snakes_Ladders
                             x = 492;
                             y = 7;
                             break;
+                        // x axis
                         default:
                             if (p / 10 % 2 != 0)
                             {

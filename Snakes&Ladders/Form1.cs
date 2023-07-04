@@ -27,7 +27,6 @@ namespace Snakes_Ladders
         public int p2 = 0;
 
         public int DiceValue { get; set; }
-        int seconds;
 
         public Form1()
         {
@@ -70,7 +69,7 @@ namespace Snakes_Ladders
             DiceValue = Functions.RollDice(pbdice);
             lbdice.Text = DiceValue.ToString();
            
-            // moving the yellow pion
+            // moving the yellow token
             if (YellowToken)
             {
                 p = Functions.Move(ref x, ref y, p, DiceValue, pbYellowToken, lbMessage);
@@ -92,7 +91,7 @@ namespace Snakes_Ladders
                 lby.Text = y.ToString();
             }
 
-            // pop up message if the winner is player1 (100th position)
+            // pop up message if the winner is player1 
             if (p == 100)
             {
                 DialogResult dg = MessageBox.Show("CONGRATULATIONS PLAYER1 - YOU WON!  \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
@@ -159,7 +158,7 @@ namespace Snakes_Ladders
 
             }
 
-            // pop up message if the winner is player2 (100th position)
+            // pop up message if the winner is player2
             if (p2 == 100)
             {
                 DialogResult dg =MessageBox.Show("CONGRATULATIONS PLAYER2 - YOU WON! \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
@@ -215,59 +214,11 @@ namespace Snakes_Ladders
 
         }
 
-        // button exit
+        // Exit button implementation
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        // timer event for rolling dice
-        //private void timer1_Tick(object sender, EventArgs e)
-        //{
-        //    int pic;
-        //    seconds++;
-        //    Random r = new Random();
-        //    if (seconds <= 10)
-        //    {
-        //        pic = r.Next(1, 7);
-        //        string picturePath2 = "./Resources/" + pic + ".png";
-        //        pbdice.ImageLocation = picturePath2;
-        //        pbdice.SizeMode = PictureBoxSizeMode.Zoom;
-        //        pbdice.Visible = true;
-        //    }
-        //    else
-        //    {
-        //        timer1.Stop();
-        //        Functions.RollDice(pbdice);
-        //    }
-        //}
-
-        //// timer function
-        //private void timergame(object sender, EventArgs e)
-        //{
-        //    second = 0;
-        //    timer1.Interval = 100;
-        //    timer1.Start();
-        //    Form1 f = new Form1();
-        //    f.timer1_Tick(sender,e);
-        //    {
-        //        int pic;
-        //        second++;
-        //        Random r = new Random();
-        //        if (second <= 10)
-        //        {
-        //            pic = r.Next(1, 7);
-        //            string picturePath2 = "./Resources/" + pic + ".png";
-        //            pbdice.ImageLocation = picturePath2;
-        //            pbdice.SizeMode = PictureBoxSizeMode.Zoom;
-
-        //        }
-        //        else
-        //        {
-        //            timer1.Stop();
-        //            Functions.RollDice(pbdice);
-        //        }
-        //    };
-        //}
     }//....end of class
 }

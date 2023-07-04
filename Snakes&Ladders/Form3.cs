@@ -17,6 +17,7 @@ namespace Snakes_Ladders
             InitializeComponent();
         }
 
+        // Start button implementation
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();
