@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,9 @@ namespace Snakes_Ladders
 {
     public partial class Form1 : Form
     {
+        public SoundPlayer player2 { get; set; }
         int flag = 0; //yellow's turn -> flag == 0
+        public bool Sound { get; set; }//true if the sound is enable
         public bool YellowToken { get; set; } = false;
         public bool PurpleToken { get; set; } = false;
 
@@ -28,9 +31,11 @@ namespace Snakes_Ladders
 
         public int DiceValue { get; set; }
 
-        public Form1()
+        public Form1(bool s)
         {
             InitializeComponent();
+            Sound = s;
+          
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -94,18 +99,38 @@ namespace Snakes_Ladders
             // pop up message if the winner is player1 
             if (p == 100)
             {
+                if (Sound)//enable the win sound only if the sound button is enabled
+                {
+                    player2 = new SoundPlayer();
+                    player2.SoundLocation = @".\Resources\WinSound.wav";
+                    player2.Play();
+                }
+                
                 DialogResult dg = MessageBox.Show("CONGRATULATIONS PLAYER1 - YOU WON!  \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
                 btnRoll.Enabled = false;
+                
                 if (dg == DialogResult.Yes)
                 {
                     this.Close();
-                    Form1 fm1 = new Form1();
+                    
+                    Form1 fm1 = new Form1(Sound);
                     fm1.Show();
+                    if (Sound)//continuing with the game sound
+                    {
+                        player2.SoundLocation = @".\Resources\GameSound.wav";
+                        player2.PlayLooping();
+                    }
                 }
                 else 
                 {
                     this.Close();
+                    if (Sound)//continuing with the game sound
+                    {
+                        player2.SoundLocation = @".\Resources\GameSound.wav";
+                        player2.PlayLooping();
+                    }
                 }
+                
             }
 
             // calling the functions for the snakes and ladders implementation
@@ -161,17 +186,35 @@ namespace Snakes_Ladders
             // pop up message if the winner is player2
             if (p2 == 100)
             {
+                if (Sound)//enable the win sound only if the sound button is enabled
+                {
+                    player2 = new SoundPlayer();
+                    player2.SoundLocation = @".\Resources\WinSound.wav";
+                    player2.Play();
+                }
+                
                 DialogResult dg =MessageBox.Show("CONGRATULATIONS PLAYER2 - YOU WON! \n\n\n PLAY AGAIN?", "WINNER", MessageBoxButtons.YesNo);
                 
                 if (dg == DialogResult.Yes)
                 { 
-                    Form1 fm1 = new Form1();
+                    Form1 fm1 = new Form1(Sound);
                     this.Close();
                     fm1.Show();
+                    if (Sound)//continuing with the game sound
+                    {
+                        player2.SoundLocation = @".\Resources\GameSound.wav";
+                        player2.PlayLooping();
+                    }
                 }
                 else
                 {
                     this.Close();
+                    if (Sound) //continuing with the game sound
+                    {
+                        player2.SoundLocation = @".\Resources\GameSound.wav";
+                        player2.PlayLooping();
+                    }
+                    
                 }
              }
 
@@ -220,5 +263,6 @@ namespace Snakes_Ladders
             this.Close();
         }
 
+       
     }//....end of class
 }

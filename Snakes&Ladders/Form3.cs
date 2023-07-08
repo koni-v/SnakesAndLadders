@@ -12,15 +12,17 @@ namespace Snakes_Ladders
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public bool sound { get; set; }
+        public Form3(bool SoundOn)
         {
             InitializeComponent();
+            sound = SoundOn; 
         }
 
         // Start button implementation
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            Form1 form = new Form1(sound);
             this.Close();
             form.ShowDialog();
             
