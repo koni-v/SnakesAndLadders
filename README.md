@@ -7,7 +7,7 @@ Windows Forms Project by: Koni Vidovic and Bojana Bojchovska
 ### 2. Упатство за користење
 На почетниот прозорец (слика 1) при стартување на апликацијата имаме можност да започнеме нова игра (New Game) или пак да погледнеме упатство за правилата на играта (How to Play).
 
-![slika1](https://github.com/koni-v/SnakesAndLadders/assets/125313042/0beb2376-e27c-4c77-b211-33fc3ca9a036)
+![slika1](https://github.com/koni-v/SnakesAndLadders/assets/126956163/188cafa9-2237-40bf-86e3-50e44524dbf6)
 
 
 (слика 1)
